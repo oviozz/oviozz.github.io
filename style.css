@@ -1,0 +1,193 @@
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #fffdfc;
+
+}
+
+.header-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+
+
+.header-title{
+    display: flex;
+    align-items: center;
+
+
+    color: inherit;
+    text-decoration: none;
+
+}
+
+.header-title:hover .header_name {
+    color: #ff335f;
+}
+
+
+
+.header-img{
+    border-radius: 50%;
+
+}
+
+.header_name{
+    color: #373a3c;
+    font-size: 20px;
+    margin-left: 5px;
+
+    transition: all 0.3s;
+
+}
+.fa-check-circle{
+    font-size: 18px;
+}
+
+
+.nagivations{
+    padding-bottom: 2px;
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+
+}
+
+.nav{
+    padding-bottom: 3px;
+    border-bottom: 5px solid #fffdfc;
+    transition: all 0.5s;
+}
+
+.nav:hover{
+    border-bottom: 5px solid #ff335f;
+
+}
+
+.heavy{
+    font-weight: bolder;
+}
+
+
+.body-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-container{
+    margin-top: 90px;
+    width: 70%;
+}
+
+
+.intro-about{
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #ff335f;
+    font-weight: bolder;
+
+}
+
+.big-title{
+    color: #373a3c;
+    font-family: "Noe Display", Georgia, Times, serif;
+    font-size: 94px;
+    line-height: 90px;
+
+    margin-top: 25px;
+    margin-bottom: -5px;
+}
+
+.big-description {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: lighter;
+
+}
+
+
+.feature-container{
+    margin-top: 80px;
+    width: 70%;
+}
+
+
+
+.feature-title{
+    font-family: "Noe Display", Georgia, Times, serif;
+    font-size: 40px;
+    color: #373a3c;
+}
+
+.dot{
+    font-size: 80px;
+    color: #ff335f;
+}
+
+
+.item{
+    text-decoration: none;
+
+    background-image: url("https://user-images.githubusercontent.com/42685801/211488705-a78bd36b-aa90-4ef4-9108-d7506f016fec.png");
+
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 14px 14px 60px -10px rgb(0 0 0 / 30%);
+
+    height: 330px;
+    width: 280px;
+    overflow-y: scroll;
+
+    margin-left: 25px;
+    margin-bottom: 30px;
+}
+
+
+.item-header{
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 10px 0 0 20px;
+    text-align: left;
+    font-family: "Noe Display", Georgia, Times, serif;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: rgba(28, 28, 28, 0.17);
+
+}
+
+.description{
+    padding: 20px;
+    text-align: left;
+    color: white;
+    line-height: 25px;
+}
+
+.projects-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.descri {
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity .2s cubic-bezier(.4, 0, .2, 1), transform .2s cubic-bezier(.4, 0, .2, 1);
+    height: 190px;
+
+    background-color: rgba(28, 28, 28, 0.2);
+}
+
+.item:hover .descri {
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity .2s cubic-bezier(.4, 0, .2, 1), transform .2s cubic-bezier(.4, 0, .2, 1);
+}
+
