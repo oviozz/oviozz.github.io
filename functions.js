@@ -84,7 +84,7 @@ function projects(){
         "Mighty Calculator": [
             "Calculator website features a user-friendly interface with vibrant and easy-to-use buttons for performing basic mathematical operations.",
             "https://user-images.githubusercontent.com/42685801/226168060-bd40a8c0-7cb5-4ad5-b4ef-58c2481b0db4.png",
-            "https://github.com/oviozz/Calculator"
+            "https://oviozz.github.io/calculator"
         ],
         "Typing Game": [
             "A PyQt5 application that tests users' typing speed and accuracy with timed tests, real-time feedback on errors and words per minute, and the ability to choose different typing exercises.",
