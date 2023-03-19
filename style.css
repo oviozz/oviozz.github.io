@@ -1,9 +1,13 @@
 
+
+
 body {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     background-color: #fffdfc;
 
 }
+
+
 
 .header-container{
     display: flex;
@@ -110,10 +114,40 @@ body {
 
 }
 
+.effect{
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 13px solid rgba(148, 148, 148, 0.2);
+
+    display: inline-block;
+    transition: all 0.4s;
+
+    height: 0.80em;
+}
+
+.effect:hover{
+    border-bottom: 13px solid rgba(255, 174, 0, 0.5);
+}
+
+
+
+.intro-effect{
+    text-decoration: none;
+    border-bottom: 13px solid rgba(148, 148, 148, 0.2);
+
+    display: inline-block;
+    transition: all 0.4s;
+
+    height: 0.80em;
+}
+
+.intro-effect:hover{
+    border-bottom: 13px solid rgba(38, 255, 174, 0.5);
+}
 
 .feature-container{
-    margin-top: 80px;
-    width: 70%;
+    margin-top: 75px;
+    width: 80%;
 }
 
 
@@ -122,6 +156,7 @@ body {
     font-family: "Noe Display", Georgia, Times, serif;
     font-size: 40px;
     color: #373a3c;
+    margin-left: 65px;
 }
 
 .dot{
@@ -129,24 +164,32 @@ body {
     color: #ff335f;
 }
 
+.tdot{
+    color: #595aff;
+}
 
 .item{
     text-decoration: none;
 
-    background-image: url("https://user-images.githubusercontent.com/42685801/211488705-a78bd36b-aa90-4ef4-9108-d7506f016fec.png");
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+    ), url("https://user-images.githubusercontent.com/42685801/211488705-a78bd36b-aa90-4ef4-9108-d7506f016fec.png");
 
     background-size: cover;
     overflow: hidden;
     border-radius: 0.5rem;
-    box-shadow: 14px 14px 60px -10px rgb(0 0 0 / 30%);
+
+    box-shadow: 14px 14px 60px -10px rgba(0, 0, 0, 0.25);
 
     height: 330px;
     width: 280px;
-    overflow-y: scroll;
 
-    margin-left: 25px;
-    margin-bottom: 30px;
+    margin-left: 45px;
+    margin-bottom: 40px;
+
 }
+
 
 
 .item-header{
@@ -157,31 +200,49 @@ body {
     font-family: "Noe Display", Georgia, Times, serif;
     font-size: 30px;
     color: #ffffff;
-    background-color: rgba(28, 28, 28, 0.17);
+
 
 }
 
 .description{
-    padding: 20px;
     text-align: left;
-    color: white;
+    color: #ffffff;
     line-height: 25px;
+    margin-top: -10px;
+
+
+    text-shadow:
+            0.05em 0 rgba(0, 0, 0, 0.5),
+            0 0.05em rgba(0, 0, 0, 0.5),
+            -0.05em 0 rgba(0, 0, 0, 0.5),
+            0 -0.05em rgba(0, 0, 0, 0.5),
+            -0.05em -0.05em rgba(0, 0, 0, 0.5),
+            -0.05em 0.05em rgba(0, 0, 0, 0.5),
+            0.05em -0.05em rgba(0, 0, 0, 0.5),
+            0.05em 0.05em rgba(0, 0, 0, 0.5);
+
+
+
 }
 
 .projects-items{
+
     display: flex;
     flex-wrap: wrap;
 }
 
 
 .descri {
+    margin-top: 30px;
+    padding: 20px;
+
     pointer-events: none;
     opacity: 0;
     transform: translateY(10px);
     transition: opacity .2s cubic-bezier(.4, 0, .2, 1), transform .2s cubic-bezier(.4, 0, .2, 1);
-    height: 190px;
+    height: 200px;
 
-    background-color: rgba(28, 28, 28, 0.2);
+
 }
 
 .item:hover .descri {
